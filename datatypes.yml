@@ -1,0 +1,43 @@
+#string varible
+#There are three types of way to repsent string variable in string 
+Name : !!str  Kaushik
+Addres : "Manihari"
+Job: 'Associate Developer'
+# We use | for storing multiple data 
+bio : |
+   Hey mu name is kaushil raj.
+   I am aspiring Associate Developer  
+# We use > for storing multiple data in single line
+Lpu : >
+ This is good uni
+ welcomr to the uni 
+#This is same as 
+Lpu1 : This is good uni welcomr to the uni 
+#This is Integer data type 
+Number : 1245
+booleanValue : No/Yes
+float: 45.36
+#specify the  data type 
+zero: !!int 0
+postiveNum : !!int 7
+negativeNum : !!int -7
+binaryNum : !!int 011001
+octaNum : !!int 036547
+hexa : !!int 0x45
+commavalue:  +540_00
+
+#floating point number 
+marks : !!float 30.74
+infinty : !!float .inf
+not a num : .nam
+#null
+surname : !!null Null #or null Null ~
+~: this is null key 
+#dates and time in yml
+dates: !!timestamp 2002-12-12
+india time: 2001-15-15uct
+
+
+
+
+

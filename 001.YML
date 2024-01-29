@@ -1,0 +1,20 @@
+"Apple " : "This is the apple "
+1 : "Thid is the one"
+---
+# lists
+
+---
+cities:
+ -new delhi 
+ -mumbai
+ -gujrat
+ -patna
+---
+cities: [patna delhi china pakistan]
+---
+#lists 
+ -gujrat
+ -apple 
+
+# is used for commenting 
+

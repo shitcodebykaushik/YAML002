@@ -1,0 +1,67 @@
+student: [ksudil,raj,shivanh]
+
+#Some of they seq will be empty this is known as sparse seq
+sparse seq:
+- kaushik
+-  
+- raj
+
+#Nested sequence 
+- 
+ name: [kaushik,Bihari]
+ age: !!int 20
+
+- 
+   name: [Gautam, Napali]
+   age: !!int 21
+-
+  name: [Sailesh,Butter]
+  age: !!int 22
+
+#key :value pairs are called maps 
+#nested mapping : mapping within a map 
+ name: kaushik
+ role:
+ age: 78
+ job: student 
+ #same as 
+name: kaushik
+role : { age : 78, job : student}
+#pairs: keys may have duplicate values
+pair example : !!pairs [jobs : student, job : teacher]
+ #!!set will allow you to have unique values 
+names: 
+? Kaushik
+? raj
+? Rahul
+ #dictionary !!omap
+ People: !!omap
+ -Kaushik :
+   name: Kaushik raj
+   age: 74
+   height: 5'4
+  -RAHUL:
+   names: Rahul raj
+   Age: 45
+
+#rESUING Some Peoperties we use anchor &base for reusbility 
+likings:
+ fav fruit : mango
+ disklie: grapes
+likings2:
+ fav fruit : mango
+ disklie: grapes
+liking: &likes
+ fav fruit : mango
+ disklie : grapes
+person1 :
+ names : Kaushik
+ <<: *likes
+
+
+
+
+
+
+
+
